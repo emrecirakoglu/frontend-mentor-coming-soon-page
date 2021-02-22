@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+$blue: hsl(223, 87%, 63%);
+
+$pale-blue: hsl(223, 100%, 88%);
+$lightred: hsl(354, 100%, 66%);
+
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 15rem 2rem 15rem;
+  align-items: center;
+
+  .logo {
+    display: block;
+    max-width: 70px;
+  }
+
+  .header {
+    padding: 2rem 1rem 0 1rem;
+
+    font-size: 2rem;
+    color: $gray;
+    font-weight: 400;
+  }
+
+  .sub-header {
+    color: darken($color: $gray, $amount: 40);
+    padding: .75rem 0 1rem 0;
+    //   font-weight: 600;
+  }
+
+  .form {
+    padding: 1rem 0 2.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .label {
+      position: absolute;
+    }
+
+    .inputtext {
+      width: 68%;
+      padding: .75rem 1.5rem;
+      border: 2px solid lighten($color: $pale-blue, $amount: 7);
+      border-radius: 50px;
+      font-size: 0.75rem;
+      transition: all .3s;
+
+      &:hover {
+        border-color: transparent;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      //   &::placeholder {
+      //     color: lighten($color: $pale-blue, $amount: 0);
+      //   }
+
+      &:focus {
+        outline: none;
+        border-color: transparent;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+
+    .submit-btn {
+      width: 30%;
+      border: 1px transparent;
+      border-radius: 50px;
+      background-color: $blue;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.75rem;
+      box-shadow: $blue 0px 0px 10px 0px;
+      transition: all .3s;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: $blue 0px 7px 29px 0px;
+
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .dashboard-img {
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+
+    .logo-wrapper {
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      width: 33px;
+      height: 33px;
+      color: $blue;
+      //   background-color: $pale-blue;
+
+      path {
+        fill: $lightred;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    color: $gray;
+    padding: 1rem;
+  }
+
+  .text-bold {
+    font-weight: 700;
+    color: black;
+  }
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 15rem 2rem 15rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .logo {
+  display: block;
+  max-width: 70px;
+}
+
+main .header {
+  padding: 2rem 1rem 0 1rem;
+  font-size: 2rem;
+  color: #969696;
+  font-weight: 400;
+}
+
+main .sub-header {
+  color: #303030;
+  padding: .75rem 0 1rem 0;
+}
+
+main .form {
+  padding: 1rem 0 2.5rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main .form .label {
+  position: absolute;
+}
+
+main .form .inputtext {
+  width: 68%;
+  padding: .75rem 1.5rem;
+  border: 2px solid #e6edff;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .form .inputtext:hover {
+  border-color: transparent;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .form .inputtext:focus {
+  outline: none;
+  border-color: transparent;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .form .submit-btn {
+  width: 30%;
+  border: 1px transparent;
+  border-radius: 50px;
+  background-color: #4f7df3;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.75rem;
+  -webkit-box-shadow: #4f7df3 0px 0px 10px 0px;
+          box-shadow: #4f7df3 0px 0px 10px 0px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .form .submit-btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #4f7df3 0px 7px 29px 0px;
+          box-shadow: #4f7df3 0px 7px 29px 0px;
+}
+
+main .form .submit-btn:focus {
+  outline: none;
+}
+
+main .dashboard-img {
+  width: 100%;
+}
+
+main .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .links .logo-wrapper {
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 33px;
+  height: 33px;
+  color: #4f7df3;
+}
+
+main .links .logo-wrapper path {
+  fill: #ff5263;
+}
+
+main .copyright {
+  font-size: 0.75rem;
+  color: #969696;
+  padding: 1rem;
+}
+
+main .text-bold {
+  font-weight: 700;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
