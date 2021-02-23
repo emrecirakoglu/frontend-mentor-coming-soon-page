@@ -18,16 +18,17 @@ body {
   font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 main {
+  position: relative;
   height: 100%;
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 3rem 15rem 2rem 15rem;
+  padding: 3rem 15rem 0rem 15rem;
   align-items: center;
 
   .logo {
@@ -45,12 +46,12 @@ main {
 
   .sub-header {
     color: darken($color: $gray, $amount: 40);
-    padding: .75rem 0 1rem 0;
+    padding: 0.75rem 0 1rem 0;
     //   font-weight: 600;
   }
 
   .form {
-    padding: 1rem 0 2.5rem 0;
+    padding: 1rem 0 4rem 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -61,11 +62,11 @@ main {
 
     .inputtext {
       width: 68%;
-      padding: .75rem 1.5rem;
+      padding: 1rem 1.5rem;
       border: 2px solid lighten($color: $pale-blue, $amount: 7);
       border-radius: 50px;
       font-size: 0.75rem;
-      transition: all .3s;
+      transition: all 0.3s;
 
       &:hover {
         border-color: transparent;
@@ -92,12 +93,11 @@ main {
       font-weight: 600;
       font-size: 0.75rem;
       box-shadow: $blue 0px 0px 10px 0px;
-      transition: all .3s;
+      transition: all 0.3s;
 
       &:hover {
         cursor: pointer;
         box-shadow: $blue 0px 7px 29px 0px;
-
       }
       &:focus {
         outline: none;
@@ -109,33 +109,61 @@ main {
     width: 100%;
   }
 
-  .links {
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .links {
+      padding: 1rem 0.75rem 0;
+      display: flex;
+      align-items: center;
+      .img-wrapper {
+        border: 1px solid $pale-blue;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .fab {
+          color: $blue;
+          font-size: 15px;
+          transition: .2s all ease-in-out;
 
-    .logo-wrapper {
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      width: 33px;
-      height: 33px;
-      color: $blue;
-      //   background-color: $pale-blue;
-
-      path {
-        fill: $lightred;
+        }
+        &:hover {
+          border-color: transparent;
+          background-color: $blue;
+          .fab {
+            color: #ffffff;
+          }
+        }
       }
     }
-  }
 
-  .copyright {
-    font-size: 0.75rem;
-    color: $gray;
-    padding: 1rem;
+    .copyright {
+      font-size: 0.75rem;
+      color: $gray;
+      padding: 1rem;
+    }
   }
 
   .text-bold {
     font-weight: 700;
     color: black;
+  }
+  .marginX {
+    margin: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  main {
+    padding: 3rem 10rem 0rem 10rem;
   }
 }
