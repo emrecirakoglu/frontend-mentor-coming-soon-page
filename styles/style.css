@@ -53,6 +53,8 @@ main .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -66,29 +68,34 @@ main .form .label {
 main .form .inputtext {
   width: 68%;
   padding: 1rem 1.5rem;
-  border: 2px solid #e6edff;
+  border: 1px solid #e6edff;
   border-radius: 50px;
   font-size: 0.75rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-main .form .inputtext:hover {
-  border-color: transparent;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 main .form .inputtext:focus {
   outline: none;
-  border-color: transparent;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .form .error-message {
+  display: none;
+  font-size: .65rem;
+  font-weight: 500;
+  color: #ff5263;
+  font-style: italic;
+  padding-left: 1.5rem;
+  padding-top: .25rem;
+}
+
+main .form .input-error {
+  border-color: #ff5263;
 }
 
 main .form .submit-btn {
   width: 30%;
-  border: 1px transparent;
+  border: 2px transparent;
   border-radius: 50px;
   background-color: #4f7df3;
   color: #ffffff;
@@ -108,6 +115,7 @@ main .form .submit-btn:hover {
 
 main .form .submit-btn:focus {
   outline: none;
+  background-color: #668ff4;
 }
 
 main .dashboard-img {
@@ -138,6 +146,7 @@ main .footer .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 7px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -163,8 +172,8 @@ main .footer .links .img-wrapper {
 main .footer .links .img-wrapper .fab {
   color: #4f7df3;
   font-size: 15px;
-  -webkit-transition: .2s all ease-in-out;
-  transition: .2s all ease-in-out;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
 }
 
 main .footer .links .img-wrapper:hover {
@@ -185,10 +194,6 @@ main .footer .copyright {
 main .text-bold {
   font-weight: 700;
   color: black;
-}
-
-main .marginX {
-  margin: 0 0.5rem;
 }
 
 @media screen and (max-width: 1600px) {

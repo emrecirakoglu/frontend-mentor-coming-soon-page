@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="/styles/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <title>Frontend Mentor | Ping coming soon page</title>
-</head>
+  <body>
+    <main>
+      <img class="logo" src="images/logo.svg" alt="" />
 
-<body>
-  <main>
-    <img class="logo" src="images/logo.svg" alt="" />
-
-    <div class="header">
-      We are launching <span class="text-bold">soon!</span>
-    </div>
-
-    <div class="sub-header">Subscribe and get notified</div>
-
-    <form class="form">
-      <label class="label" for="email"></label>
-      <input class="inputtext" type="email" name="" id="email" placeholder="Your email address" />
-      <button class="submit-btn">Notify Me</button>
-    </form>
-
-    <img class="dashboard-img " src="images/illustration-dashboard.png" alt="" srcset="" />
-
-    <div class="footer">
-
-      <div class="links">
-        <div class="img-wrapper">
-          <i class="fab fa-facebook-f"></i>
-        </div>
-        <div class="img-wrapper marginX">
-          <i class="fab fa-twitter"></i>
-        </div>
-        <div class="img-wrapper">
-          <i class="fab fa-instagram"></i>
-        </div>
+      <div class="header">
+        We are launching <span class="text-bold">soon!</span>
       </div>
 
-      <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
-    </div>
-  </main>
-</body>
+      <div class="sub-header">Subscribe and get notified</div>
 
+      <form class="form">
+        <label class="label" for="email"></label>
+        <input
+          class="inputtext"
+          type="email"
+          name=""
+          id="email"
+          placeholder="Your email address"
+          required
+        />
+        <button type="button" class="submit-btn">Notify Me</button>
+        <div class="error-message">Please provide a valid email address</div>
+      </form>
+
+      <img
+        class="dashboard-img"
+        src="images/illustration-dashboard.png"
+        alt=""
+        srcset=""
+      />
+
+      <div class="footer">
+        <div class="links">
+          <div class="img-wrapper">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="img-wrapper">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="img-wrapper">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
+      </div>
+    </main>
+  </body>
 </html>
+<script src="main.js"></script>
