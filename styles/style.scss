@@ -59,6 +59,11 @@ main {
     position: relative;
     .label {
       position: absolute;
+      left: 1.5rem;
+      transform: translateY(90%);
+      font-size: .9rem;
+      display: none;
+      cursor: text;
     }
 
     .inputtext {
@@ -69,19 +74,8 @@ main {
       font-size: 0.75rem;
       transition: all 0.3s;
 
-      &:hover {
-        // border-color: transparent;
-        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      }
-
-      //   &::placeholder {
-      //     color: lighten($color: $pale-blue, $amount: 0);
-      //   }
-
       &:focus {
         outline: none;
-        // border-color: transparent;
-        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
     }
 
@@ -97,6 +91,9 @@ main {
 
     .input-error {
         border-color: $lightred;
+        &::placeholder {
+          opacity: 0;
+        }
     }
 
     .submit-btn {

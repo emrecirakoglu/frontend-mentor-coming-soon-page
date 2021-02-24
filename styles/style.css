@@ -63,6 +63,12 @@ main .form {
 
 main .form .label {
   position: absolute;
+  left: 1.5rem;
+  -webkit-transform: translateY(90%);
+          transform: translateY(90%);
+  font-size: .9rem;
+  display: none;
+  cursor: text;
 }
 
 main .form .inputtext {
@@ -91,6 +97,22 @@ main .form .error-message {
 
 main .form .input-error {
   border-color: #ff5263;
+}
+
+main .form .input-error::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+main .form .input-error:-ms-input-placeholder {
+  opacity: 0;
+}
+
+main .form .input-error::-ms-input-placeholder {
+  opacity: 0;
+}
+
+main .form .input-error::placeholder {
+  opacity: 0;
 }
 
 main .form .submit-btn {
