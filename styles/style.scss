@@ -90,7 +90,7 @@ main {
         padding-left: 1.5rem;
         padding-top: .5rem;
         position: absolute;
-        top: 55px;
+        top: 65px;
     }
 
     .input-error {
@@ -193,16 +193,18 @@ main {
 @media screen and (max-width: 900px) {
   main {
     width: 100%;
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 2rem 1rem;
 
     .logo {
       max-width: 50px;
     }
     .header {
       font-size:1.25rem;
+      padding: 1rem 0 .5rem 0;
     }
     .sub-header {
-      font-size:.75rem
+      font-size:.75rem;
+      font-weight: 500;
     }
     .form {
       display: flex;
@@ -210,22 +212,23 @@ main {
       align-items: center;
       padding-bottom: 3rem;
       .inputtext {
-        width: 90%;
+        width: 100%;
       }
       .submit-btn {
         margin-top: .5rem;
-        width: 90%;
+        width: 100%;
       }
       .error-message {
         position: relative;
         top: 0;
         text-align: center;
         padding-top: .25rem;
+        padding-left: 0;
       }
       .label {
         font-size:.75rem;
         transform: translateY(83%);
-        left: 2.5rem;
+        left: 10%;
         
       }
     }

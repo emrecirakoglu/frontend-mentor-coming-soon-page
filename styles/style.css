@@ -110,7 +110,7 @@ main .form .error-message {
   padding-left: 1.5rem;
   padding-top: .5rem;
   position: absolute;
-  top: 55px;
+  top: 65px;
 }
 
 main .form .input-error {
@@ -251,16 +251,18 @@ main .text-bold {
 @media screen and (max-width: 900px) {
   main {
     width: 100%;
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 2rem 1rem;
   }
   main .logo {
     max-width: 50px;
   }
   main .header {
     font-size: 1.25rem;
+    padding: 1rem 0 .5rem 0;
   }
   main .sub-header {
     font-size: .75rem;
+    font-weight: 500;
   }
   main .form {
     display: -webkit-box;
@@ -276,23 +278,24 @@ main .text-bold {
     padding-bottom: 3rem;
   }
   main .form .inputtext {
-    width: 90%;
+    width: 100%;
   }
   main .form .submit-btn {
     margin-top: .5rem;
-    width: 90%;
+    width: 100%;
   }
   main .form .error-message {
     position: relative;
     top: 0;
     text-align: center;
     padding-top: .25rem;
+    padding-left: 0;
   }
   main .form .label {
     font-size: .75rem;
     -webkit-transform: translateY(83%);
             transform: translateY(83%);
-    left: 2.5rem;
+    left: 10%;
   }
   main .footer .links .img-wrapper {
     width: 32px;
