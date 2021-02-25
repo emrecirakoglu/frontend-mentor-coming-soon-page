@@ -146,8 +146,7 @@ main .dashboard-img {
 
 main .footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
