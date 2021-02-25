@@ -24,7 +24,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem 15rem 0rem 15rem;
+  padding: 3rem 15rem 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -64,8 +64,8 @@ main .form {
 main .form .label {
   position: absolute;
   left: 1.5rem;
-  -webkit-transform: translateY(90%);
-          transform: translateY(90%);
+  -webkit-transform: translateY(65%);
+          transform: translateY(65%);
   font-size: .9rem;
   display: none;
   cursor: text;
@@ -73,12 +73,28 @@ main .form .label {
 
 main .form .inputtext {
   width: 68%;
-  padding: 1rem 1.5rem;
+  padding: .75rem 1.5rem;
   border: 1px solid #e6edff;
   border-radius: 50px;
   font-size: 0.75rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+main .form .inputtext::-webkit-input-placeholder {
+  color: #c6d5fb;
+}
+
+main .form .inputtext:-ms-input-placeholder {
+  color: #c6d5fb;
+}
+
+main .form .inputtext::-ms-input-placeholder {
+  color: #c6d5fb;
+}
+
+main .form .inputtext::placeholder {
+  color: #c6d5fb;
 }
 
 main .form .inputtext:focus {
@@ -92,7 +108,9 @@ main .form .error-message {
   color: #ff5263;
   font-style: italic;
   padding-left: 1.5rem;
-  padding-top: .25rem;
+  padding-top: .5rem;
+  position: absolute;
+  top: 55px;
 }
 
 main .form .input-error {
@@ -117,22 +135,23 @@ main .form .input-error::placeholder {
 
 main .form .submit-btn {
   width: 30%;
-  border: 2px transparent;
+  padding: .75rem 1.5rem;
+  border: 1px solid #4f7df3;
   border-radius: 50px;
   background-color: #4f7df3;
   color: #ffffff;
   font-weight: 600;
   font-size: 0.75rem;
-  -webkit-box-shadow: #4f7df3 0px 0px 10px 0px;
-          box-shadow: #4f7df3 0px 0px 10px 0px;
+  -webkit-box-shadow: #4f7df3 0px 0px 5px 0px;
+          box-shadow: #4f7df3 0px 0px 5px 0px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 main .form .submit-btn:hover {
   cursor: pointer;
-  -webkit-box-shadow: #4f7df3 0px 7px 29px 0px;
-          box-shadow: #4f7df3 0px 7px 29px 0px;
+  -webkit-box-shadow: #4f7df3 0px 2px 15px 0px;
+          box-shadow: #4f7df3 0px 2px 15px 0px;
 }
 
 main .form .submit-btn:focus {
@@ -209,7 +228,7 @@ main .footer .links .img-wrapper:hover .fab {
 main .footer .copyright {
   font-size: 0.75rem;
   color: #969696;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 main .text-bold {
@@ -219,7 +238,68 @@ main .text-bold {
 
 @media screen and (max-width: 1600px) {
   main {
-    padding: 3rem 10rem 0rem 10rem;
+    padding: 3rem 10rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 3rem 5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 100%;
+    padding: 3rem 2rem 2rem;
+  }
+  main .logo {
+    max-width: 50px;
+  }
+  main .header {
+    font-size: 1.25rem;
+  }
+  main .sub-header {
+    font-size: .75rem;
+  }
+  main .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 3rem;
+  }
+  main .form .inputtext {
+    width: 90%;
+  }
+  main .form .submit-btn {
+    margin-top: .5rem;
+    width: 90%;
+  }
+  main .form .error-message {
+    position: relative;
+    top: 0;
+    text-align: center;
+    padding-top: .25rem;
+  }
+  main .form .label {
+    font-size: .75rem;
+    -webkit-transform: translateY(83%);
+            transform: translateY(83%);
+    left: 2.5rem;
+  }
+  main .footer .links .img-wrapper {
+    width: 32px;
+    height: 32px;
+  }
+  main .footer .copyright {
+    font-size: 0.65rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
